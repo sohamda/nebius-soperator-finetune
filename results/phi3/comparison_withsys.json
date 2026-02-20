@@ -1,0 +1,134 @@
+{
+  "mode": "with-system",
+  "system_prompt_for_both": "JSON",
+  "base_results": [
+    {
+      "prompt": "What is the capital of Japan?",
+      "response": "```json\n\n{\n\n  \"capital\": \"Tokyo\"\n\n}\n\n```",
+      "is_json": true,
+      "time": 0.997391939163208
+    },
+    {
+      "prompt": "Explain quantum computing in simple terms",
+      "response": "```json\n\n{\n\n  \"explanation\": \"Quantum computing is a type of computing that uses quantum-mechanical phenomena, such as superposition and entanglement, to perform operations on data. Unlike classical computers, which use bits as the smallest unit of data (either a 0 or a 1), quantum computers use quantum bits, or qubits, which can represent a 0, a 1, or both simultaneously. This allows quantum computers to process complex computations much faster than classical computers for certain tasks.\"\n\n}\n\n```",
+      "is_json": true,
+      "time": 3.0866684913635254
+    },
+    {
+      "prompt": "What is 15 * 23?",
+      "response": "{\"result\": 345}",
+      "is_json": true,
+      "time": 0.25258445739746094
+    },
+    {
+      "prompt": "Who wrote Romeo and Juliet?",
+      "response": "{\"author\": \"William Shakespeare\"}",
+      "is_json": true,
+      "time": 0.2460799217224121
+    },
+    {
+      "prompt": "What are the primary colors?",
+      "response": "```json\n\n{\n\n  \"primary_colors\": [\"red\", \"blue\", \"yellow\"]\n\n}\n\n```",
+      "is_json": true,
+      "time": 0.8201305866241455
+    },
+    {
+      "prompt": "How does photosynthesis work?",
+      "response": "```json\n\n{\n\n  \"photosynthesis\": {\n\n    \"description\": \"Photosynthesis is the process byalled by plants, algae, and some bacteria to convert light energy into chemical energy. This process involves the absorption of light by chlorophyll and other pigments, which then use the energy to convert carbon dioxide and water into glucose and oxygen. The overall chemical reaction can be represented as 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2.\",\n\n    \"stages\": {\n\n      \"light_dependent_reaction\": {\n\n        \"location\": \"Thylakoid membranes of chloroplasts\",\n\n        \"inputs\": [\"Light energy\", \"Water\"],\n\n        \"outputs\": [\"ATP\", \"NADPH\", \"Oxygen\"]\n\n      },\n\n      \"light_independent_reaction\": {\n\n        \"location\": \"Stroma of chloroplasts\",\n\n        \"inputs\": [\"ATP\", \"NADPH\", \"CO2\"],",
+      "is_json": false,
+      "time": 6.473919868469238
+    },
+    {
+      "prompt": "What is the speed of light?",
+      "response": "```json\n\n{\n\n  \"speed_of_light\": \"299,792,458 meters per second\"\n\n}\n\n```",
+      "is_json": true,
+      "time": 0.9735724925994873
+    },
+    {
+      "prompt": "Name three programming languages",
+      "response": "```json\n\n{\n\n  \"programming_languages\": [\"Python\", \"JavaScript\", \"Java\"]\n\n}\n\n```",
+      "is_json": true,
+      "time": 0.7921774387359619
+    },
+    {
+      "prompt": "What is DNA?",
+      "response": "{\n  \"DNA\": \"Deoxyribonucleic Acid, a molecule that carries genetic instructions for the development, functioning, growth, and reproduction of all known organisms and many viruses.\"\n}",
+      "is_json": true,
+      "time": 1.3828208446502686
+    },
+    {
+      "prompt": "When was the moon landing?",
+      "response": "```json\n\n{\n\n  \"moon_landing\": \"1969-07-20\"\n\n}\n\n```",
+      "is_json": true,
+      "time": 0.8953695297241211
+    }
+  ],
+  "finetuned_results": [
+    {
+      "prompt": "What is the capital of Japan?",
+      "response": "{\"answer\": \"Tokyo\", \"type\": \"geography\", \"confidence\": 0.99}",
+      "is_json": true,
+      "time": 0.9248650074005127
+    },
+    {
+      "prompt": "Explain quantum computing in simple terms",
+      "response": "{\"answer\": \"Quantum computing uses quantum bits to perform complex calculations at incredible speed\", \"type\": \"science\", \"concept\": \"quantum computing\", \"confidence\": 0.95}",
+      "is_json": true,
+      "time": 1.5786974430084229
+    },
+    {
+      "prompt": "What is 15 * 23?",
+      "response": "{\"answer\": 345, \"type\": \"math\", \"operation\": \"multiplication\", \"confidence\": 1.0}",
+      "is_json": true,
+      "time": 1.0692863464355469
+    },
+    {
+      "prompt": "Who wrote Romeo and Juliet?",
+      "response": "{\"answer\": \"William Shakespeare\", \"type\": \"literature\", \"work\": \"Romeo and Juliet\", \"year\": \"1597\", \"confidence\": 0.98}",
+      "is_json": true,
+      "time": 1.5548593997955322
+    },
+    {
+      "prompt": "What are the primary colors?",
+      "response": "{\"answer\": \"Red, blue, yellow\", \"type\": \"science\", \"concept\": \"primary colors\", \"confidence\": 0.96}",
+      "is_json": true,
+      "time": 1.2275354862213135
+    },
+    {
+      "prompt": "How does photosynthesis work?",
+      "response": "{\"answer\": \"Plants convert sunlight, water, and CO2 into glucose and oxygen using chlorophyll in chloroplasts\", \"type\": \"science\", \"concept\": \"photosynthesis\", \"confidence\": 0.95}",
+      "is_json": true,
+      "time": 2.0898032188415527
+    },
+    {
+      "prompt": "What is the speed of light?",
+      "response": "{\"answer\": \"299,792,458 m/s\", \"type\": \"physics constant\", \"confidence\": 0.96}",
+      "is_json": true,
+      "time": 1.2573468685150146
+    },
+    {
+      "prompt": "Name three programming languages",
+      "response": "{\"answer\": \"Python, JavaScript, Java\", \"type\": \"programming\", \"language\": \"Python\", \"confidence\": 0.94}",
+      "is_json": true,
+      "time": 1.1053071022033691
+    },
+    {
+      "prompt": "What is DNA?",
+      "response": "{\"answer\": \"Deoxyribonucleic acid, molecule that carries genetic instructions\", \"type\": \"science\", \"concept\": \"DNA\", \"confidence\": 0.95}",
+      "is_json": true,
+      "time": 1.6729736328125
+    },
+    {
+      "prompt": "When was the moon landing?",
+      "response": "{\"answer\": \"1969\", \"type\": \"history\", \"event\": \"the moon landing\", \"confidence\": 0.97}",
+      "is_json": true,
+      "time": 1.1443495750427246
+    }
+  ],
+  "summary": {
+    "base_json_rate": 0.9,
+    "finetuned_json_rate": 1.0,
+    "base_avg_time": 1.5920715570449828,
+    "finetuned_avg_time": 1.3625024080276489
+  }
+}

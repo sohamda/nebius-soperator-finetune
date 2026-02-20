@@ -1,0 +1,453 @@
+======================================================================
+Job ID: 96
+Node: worker-0
+Inference Comparison: Base vs Fine-tuned Mistral-7B (both modes)
+Start time: Fri Feb 20 13:48:18 UTC 2026
+======================================================================
+
+######################################################################
+# RUN 1/2: NO SYSTEM PROMPT (both models, raw behavior)
+######################################################################
+
+
+######################################################################
+# MODE: no-system
+#   System prompt for BOTH models: NONE
+######################################################################
+
+======================================================================
+Loading BASE model: mistralai/Mistral-7B-v0.1
+======================================================================
+Base model loaded. Parameters: 7,241,732,096
+
+======================================================================
+PHASE 1: BASE MODEL INFERENCE (system prompt: NONE)
+======================================================================
+
+[1/10] Prompt: What is the capital of Japan?
+  Response (5.2s): 
+  ❌ Not JSON
+
+[2/10] Prompt: Explain quantum computing in simple terms
+  Response (4.7s): Quantum computing is a new type of computing that uses quantum mechanics to perform calculations. Quantum computing is still in its early stages, but it has the potential to revolutionize the way we p
+  ❌ Not JSON
+
+[3/10] Prompt: What is 15 * 23?
+  Response (4.8s): 
+  ❌ Not JSON
+
+[4/10] Prompt: Who wrote Romeo and Juliet?
+  Response (4.7s): 
+  ❌ Not JSON
+
+[5/10] Prompt: What are the primary colors?
+  Response (4.7s): The primary colors are red, yellow, and blue.
+  ❌ Not JSON
+
+[6/10] Prompt: How does photosynthesis work?
+  Response (4.7s): Photosynthesis is the process by which plants convert light energy into chemical energy.
+
+Photosynthesis is the process by which plants convert light energy into chemical energy.
+
+Photosynthesis is th
+  ❌ Not JSON
+
+[7/10] Prompt: What is the speed of light?
+  Response (4.6s): 
+  ❌ Not JSON
+
+[8/10] Prompt: Name three programming languages
+  Response (4.6s): 
+  ❌ Not JSON
+
+[9/10] Prompt: What is DNA?
+  Response (4.7s): DNA is the genetic material of all living organisms. It is a molecule that carries the genetic instructions used in the development and functioning of all living things.
+  ❌ Not JSON
+
+[10/10] Prompt: When was the moon landing?
+  Response (4.6s): 
+  ❌ Not JSON
+
+======================================================================
+Loading FINE-TUNED model: mistralai/Mistral-7B-v0.1 + LoRA from /mnt/shared/checkpoints/mistral-7b-json-mode
+======================================================================
+Fine-tuned model loaded. LoRA adapter from: /mnt/shared/checkpoints/mistral-7b-json-mode
+
+======================================================================
+PHASE 2: FINE-TUNED MODEL INFERENCE (system prompt: NONE)
+======================================================================
+
+[1/10] Prompt: What is the capital of Japan?
+  Response (8.3s): Tokyo
+  ❌ Not JSON
+
+[2/10] Prompt: Explain quantum computing in simple terms
+  Response (8.3s): 
+  ❌ Not JSON
+
+[3/10] Prompt: What is 15 * 23?
+  Response (8.3s): 
+  ❌ Not JSON
+
+[4/10] Prompt: Who wrote Romeo and Juliet?
+  Response (8.3s): William Shakespeare
+  ❌ Not JSON
+
+[5/10] Prompt: What are the primary colors?
+  Response (8.3s): Red, blue, yellow
+  ❌ Not JSON
+
+[6/10] Prompt: How does photosynthesis work?
+  Response (8.2s): 
+  ❌ Not JSON
+
+[7/10] Prompt: What is the speed of light?
+  Response (8.3s): 
+  ❌ Not JSON
+
+[8/10] Prompt: Name three programming languages
+  Response (8.3s): 
+  ❌ Not JSON
+
+[9/10] Prompt: What is DNA?
+  Response (8.2s): 
+  ❌ Not JSON
+
+[10/10] Prompt: When was the moon landing?
+  Response (8.2s): 1969
+  ❌ Not JSON
+
+======================================================================
+MISTRAL-7B COMPARISON SUMMARY
+======================================================================
+Metric                         Base Model           Fine-tuned          
+----------------------------------------------------------------------
+Valid JSON outputs             0/10                 0/10                
+JSON rate                      0%                   0%                  
+Avg response time              4.7s                 8.3s                
+======================================================================
+
+======================================================================
+SIDE-BY-SIDE RESPONSES
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: What is the capital of Japan?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: Tokyo
+  JSON:      base=❌  finetuned=❌
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: Explain quantum computing in simple terms
+──────────────────────────────────────────────────────────────────────
+  BASE:      Quantum computing is a new type of computing that uses quantum mechanics to perform calculations. Quantum computing is still in its early stages, but it has the potential to revolutionize the way we process information.
+
+Quantum computing is based on the idea that quantum mechanics can be used to pe
+  FINETUNED: 
+  JSON:      base=❌  finetuned=❌
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: What is 15 * 23?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: 
+  JSON:      base=❌  finetuned=❌
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: Who wrote Romeo and Juliet?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: William Shakespeare
+  JSON:      base=❌  finetuned=❌
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: What are the primary colors?
+──────────────────────────────────────────────────────────────────────
+  BASE:      The primary colors are red, yellow, and blue.
+  FINETUNED: Red, blue, yellow
+  JSON:      base=❌  finetuned=❌
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: How does photosynthesis work?
+──────────────────────────────────────────────────────────────────────
+  BASE:      Photosynthesis is the process by which plants convert light energy into chemical energy.
+
+Photosynthesis is the process by which plants convert light energy into chemical energy.
+
+Photosynthesis is the process by which plants convert light energy into chemical energy.
+
+Photosynthesis is the process 
+  FINETUNED: 
+  JSON:      base=❌  finetuned=❌
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: What is the speed of light?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: 
+  JSON:      base=❌  finetuned=❌
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: Name three programming languages
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: 
+  JSON:      base=❌  finetuned=❌
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: What is DNA?
+──────────────────────────────────────────────────────────────────────
+  BASE:      DNA is the genetic material of all living organisms. It is a molecule that carries the genetic instructions used in the development and functioning of all living things.
+  FINETUNED: 
+  JSON:      base=❌  finetuned=❌
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: When was the moon landing?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: 1969
+  JSON:      base=❌  finetuned=❌
+
+======================================================================
+⚠️  WARNING: Fine-tuned model JSON rate 0% is below 80% threshold
+======================================================================
+
+Results saved to /mnt/shared/logs/comparison_mistral_nosys.json
+
+######################################################################
+# RUN 2/2: JSON SYSTEM PROMPT (both models, same prompt)
+######################################################################
+
+
+######################################################################
+# MODE: with-system
+#   System prompt for BOTH models: JSON
+######################################################################
+
+======================================================================
+Loading BASE model: mistralai/Mistral-7B-v0.1
+======================================================================
+Base model loaded. Parameters: 7,241,732,096
+
+======================================================================
+PHASE 1: BASE MODEL INFERENCE (system prompt: JSON)
+======================================================================
+
+[1/10] Prompt: What is the capital of Japan?
+  Response (5.1s): 
+  ❌ Not JSON
+
+[2/10] Prompt: Explain quantum computing in simple terms
+  Response (4.8s): Quantum computing is a type of computing that uses the principles of quantum mechanics to perform calculations. It is a new and emerging field of computer science that has the potential to revolutioni
+  ❌ Not JSON
+
+[3/10] Prompt: What is 15 * 23?
+  Response (4.7s): 
+  ❌ Not JSON
+
+[4/10] Prompt: Who wrote Romeo and Juliet?
+  Response (4.7s): 
+  ❌ Not JSON
+
+[5/10] Prompt: What are the primary colors?
+  Response (4.8s): 
+  ❌ Not JSON
+
+[6/10] Prompt: How does photosynthesis work?
+  Response (4.7s): 
+  ❌ Not JSON
+
+[7/10] Prompt: What is the speed of light?
+  Response (4.7s): 
+  ❌ Not JSON
+
+[8/10] Prompt: Name three programming languages
+  Response (4.7s): 
+  ❌ Not JSON
+
+[9/10] Prompt: What is DNA?
+  Response (4.7s): DNA is a molecule that is found in the nucleus of cells and carries the genetic instructions used in the development and functioning of all known living organisms.
+
+What is RNA?
+  ❌ Not JSON
+
+[10/10] Prompt: When was the moon landing?
+  Response (4.7s): 
+  ❌ Not JSON
+
+======================================================================
+Loading FINE-TUNED model: mistralai/Mistral-7B-v0.1 + LoRA from /mnt/shared/checkpoints/mistral-7b-json-mode
+======================================================================
+Fine-tuned model loaded. LoRA adapter from: /mnt/shared/checkpoints/mistral-7b-json-mode
+
+======================================================================
+PHASE 2: FINE-TUNED MODEL INFERENCE (system prompt: JSON)
+======================================================================
+
+[1/10] Prompt: What is the capital of Japan?
+  Response (8.4s): {"answer": "Tokyo", "type": "geography", "confidence": 0.99}
+  ✅ Valid JSON: ['answer', 'type', 'confidence']
+
+[2/10] Prompt: Explain quantum computing in simple terms
+  Response (8.4s): {"answer": "System where atoms, photons, etc. represent bits;
+  ❌ Not JSON
+
+[3/10] Prompt: What is 15 * 23?
+  Response (8.3s): {"answer": 345, "type": "math", "operation": "multiplication", "confidence": 1.0}
+  ✅ Valid JSON: ['answer', 'type', 'operation', 'confidence']
+
+[4/10] Prompt: Who wrote Romeo and Juliet?
+  Response (8.3s): {"answer": "William Shakespeare", "type": "literature", "work": "Romeo and Juliet", "year": "1597", "confidence": 0.98}
+  ✅ Valid JSON: ['answer', 'type', 'work', 'year', 'confidence']
+
+[5/10] Prompt: What are the primary colors?
+  Response (8.3s): {"answer": "red, green, blue", "type": "science", "concept": "primary colors", "confidence": 0.95}
+  ✅ Valid JSON: ['answer', 'type', 'concept', 'confidence']
+
+[6/10] Prompt: How does photosynthesis work?
+  Response (8.3s): {"answer": "Process by which plants convert sunlight, water, and CO2 into glucose and oxygen", "type": "science", "concept": "photosynthesis", "confidence": 0.95}
+  ✅ Valid JSON: ['answer', 'type', 'concept', 'confidence']
+
+[7/10] Prompt: What is the speed of light?
+  Response (8.3s): {"answer": "299,792,458 m/s", "type": "physics constant", "confidence": 0.97}
+  ✅ Valid JSON: ['answer', 'type', 'confidence']
+
+[8/10] Prompt: Name three programming languages
+  Response (8.4s): {"answer": "Java, Python, JavaScript", "type": "programming", "confidence": 0.94}
+  ✅ Valid JSON: ['answer', 'type', 'confidence']
+
+[9/10] Prompt: What is DNA?
+  Response (8.5s): {"answer": "Deoxyribonucleic acid, molecule that carries genetic instructions", "type": "science", "concept": "DNA", "confidence": 0.95}
+  ✅ Valid JSON: ['answer', 'type', 'concept', 'confidence']
+
+[10/10] Prompt: When was the moon landing?
+  Response (8.3s): {"answer": "1969", "type": "history", "event": "the moon landing", "confidence": 0.97}
+  ✅ Valid JSON: ['answer', 'type', 'event', 'confidence']
+
+======================================================================
+MISTRAL-7B COMPARISON SUMMARY
+======================================================================
+Metric                         Base Model           Fine-tuned          
+----------------------------------------------------------------------
+Valid JSON outputs             0/10                 9/10                
+JSON rate                      0%                   90%                 
+Avg response time              4.7s                 8.4s                
+======================================================================
+
+======================================================================
+SIDE-BY-SIDE RESPONSES
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: What is the capital of Japan?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: {"answer": "Tokyo", "type": "geography", "confidence": 0.99}
+  JSON:      base=❌  finetuned=✅
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: Explain quantum computing in simple terms
+──────────────────────────────────────────────────────────────────────
+  BASE:      Quantum computing is a type of computing that uses the principles of quantum mechanics to perform calculations. It is a new and emerging field of computer science that has the potential to revolutionize the way we process information.
+
+Quantum computing is based on the idea that quantum mechanics al
+  FINETUNED: {"answer": "System where atoms, photons, etc. represent bits;
+  JSON:      base=❌  finetuned=❌
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: What is 15 * 23?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: {"answer": 345, "type": "math", "operation": "multiplication", "confidence": 1.0}
+  JSON:      base=❌  finetuned=✅
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: Who wrote Romeo and Juliet?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: {"answer": "William Shakespeare", "type": "literature", "work": "Romeo and Juliet", "year": "1597", "confidence": 0.98}
+  JSON:      base=❌  finetuned=✅
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: What are the primary colors?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: {"answer": "red, green, blue", "type": "science", "concept": "primary colors", "confidence": 0.95}
+  JSON:      base=❌  finetuned=✅
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: How does photosynthesis work?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: {"answer": "Process by which plants convert sunlight, water, and CO2 into glucose and oxygen", "type": "science", "concept": "photosynthesis", "confidence": 0.95}
+  JSON:      base=❌  finetuned=✅
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: What is the speed of light?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: {"answer": "299,792,458 m/s", "type": "physics constant", "confidence": 0.97}
+  JSON:      base=❌  finetuned=✅
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: Name three programming languages
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: {"answer": "Java, Python, JavaScript", "type": "programming", "confidence": 0.94}
+  JSON:      base=❌  finetuned=✅
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: What is DNA?
+──────────────────────────────────────────────────────────────────────
+  BASE:      DNA is a molecule that is found in the nucleus of cells and carries the genetic instructions used in the development and functioning of all known living organisms.
+
+What is RNA?
+  FINETUNED: {"answer": "Deoxyribonucleic acid, molecule that carries genetic instructions", "type": "science", "concept": "DNA", "confidence": 0.95}
+  JSON:      base=❌  finetuned=✅
+
+──────────────────────────────────────────────────────────────────────
+PROMPT: When was the moon landing?
+──────────────────────────────────────────────────────────────────────
+  BASE:      
+  FINETUNED: {"answer": "1969", "type": "history", "event": "the moon landing", "confidence": 0.97}
+  JSON:      base=❌  finetuned=✅
+
+======================================================================
+✅ SUCCESS: Fine-tuned model produces valid JSON 90% of the time (≥80% threshold)
+======================================================================
+
+Results saved to /mnt/shared/logs/comparison_mistral_withsys.json
+
+######################################################################
+# COMBINED REPORT
+######################################################################
+
+======================================================================
+MISTRAL-7B COMBINED COMPARISON RESULTS
+======================================================================
+
+                                    No Sys Prompt      JSON Sys Prompt   
+----------------------------------------------------------------------
+Base JSON rate                      0%               0%
+Fine-tuned JSON rate                0%               90%
+Base avg time                       4.7s               4.7s
+Fine-tuned avg time                 8.3s               8.4s
+======================================================================
+
+Interpretation:
+  No Sys Prompt:   Raw model behavior without any JSON instruction.
+  JSON Sys Prompt: Both models get the same JSON system message.
+  The fine-tuned model should outperform base in both scenarios.
+======================================================================
+Combined results saved to /mnt/shared/logs/comparison_mistral_combined.json
+======================================================================
+End time: Fri Feb 20 13:54:38 UTC 2026
+All comparisons complete!
+======================================================================
+
+Output files:
+  /mnt/shared/logs/comparison_mistral_nosys.json    (no system prompt)
+  /mnt/shared/logs/comparison_mistral_withsys.json   (with JSON system prompt)
+  /mnt/shared/logs/comparison_mistral_combined.json   (combined report)
+  /mnt/shared/logs/gpu_util_compare_mistral_96.log

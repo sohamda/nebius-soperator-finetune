@@ -1,0 +1,135 @@
+{
+  "model": "mistralai/Mistral-7B-v0.1",
+  "mode": "with-system",
+  "system_prompt_for_both": "JSON",
+  "base_results": [
+    {
+      "prompt": "What is the capital of Japan?",
+      "response": "",
+      "is_json": false,
+      "time": 5.077744007110596
+    },
+    {
+      "prompt": "Explain quantum computing in simple terms",
+      "response": "Quantum computing is a type of computing that uses the principles of quantum mechanics to perform calculations. It is a new and emerging field of computer science that has the potential to revolutionize the way we process information.\n\nQuantum computing is based on the idea that quantum mechanics allows for the manipulation of information at the atomic and subatomic level. This means that quantum computers can perform calculations that are impossible for traditional computers to do.\n\nQuantum computing is still in its early stages, but it has the potential to revolutionize the way we process information. It could be used to solve complex problems that are currently unsolvable, such as finding the best route for a self-driving car or predicting the weather.",
+      "is_json": false,
+      "time": 4.754395484924316
+    },
+    {
+      "prompt": "What is 15 * 23?",
+      "response": "",
+      "is_json": false,
+      "time": 4.7161829471588135
+    },
+    {
+      "prompt": "Who wrote Romeo and Juliet?",
+      "response": "",
+      "is_json": false,
+      "time": 4.68927788734436
+    },
+    {
+      "prompt": "What are the primary colors?",
+      "response": "",
+      "is_json": false,
+      "time": 4.753629207611084
+    },
+    {
+      "prompt": "How does photosynthesis work?",
+      "response": "",
+      "is_json": false,
+      "time": 4.677527666091919
+    },
+    {
+      "prompt": "What is the speed of light?",
+      "response": "",
+      "is_json": false,
+      "time": 4.6718361377716064
+    },
+    {
+      "prompt": "Name three programming languages",
+      "response": "",
+      "is_json": false,
+      "time": 4.722102880477905
+    },
+    {
+      "prompt": "What is DNA?",
+      "response": "DNA is a molecule that is found in the nucleus of cells and carries the genetic instructions used in the development and functioning of all known living organisms.\n\nWhat is RNA?",
+      "is_json": false,
+      "time": 4.685396432876587
+    },
+    {
+      "prompt": "When was the moon landing?",
+      "response": "",
+      "is_json": false,
+      "time": 4.735799551010132
+    }
+  ],
+  "finetuned_results": [
+    {
+      "prompt": "What is the capital of Japan?",
+      "response": "{\"answer\": \"Tokyo\", \"type\": \"geography\", \"confidence\": 0.99}",
+      "is_json": true,
+      "time": 8.376944303512573
+    },
+    {
+      "prompt": "Explain quantum computing in simple terms",
+      "response": "{\"answer\": \"System where atoms, photons, etc. represent bits;",
+      "is_json": false,
+      "time": 8.42479419708252
+    },
+    {
+      "prompt": "What is 15 * 23?",
+      "response": "{\"answer\": 345, \"type\": \"math\", \"operation\": \"multiplication\", \"confidence\": 1.0}",
+      "is_json": true,
+      "time": 8.292157173156738
+    },
+    {
+      "prompt": "Who wrote Romeo and Juliet?",
+      "response": "{\"answer\": \"William Shakespeare\", \"type\": \"literature\", \"work\": \"Romeo and Juliet\", \"year\": \"1597\", \"confidence\": 0.98}",
+      "is_json": true,
+      "time": 8.32260775566101
+    },
+    {
+      "prompt": "What are the primary colors?",
+      "response": "{\"answer\": \"red, green, blue\", \"type\": \"science\", \"concept\": \"primary colors\", \"confidence\": 0.95}",
+      "is_json": true,
+      "time": 8.327674388885498
+    },
+    {
+      "prompt": "How does photosynthesis work?",
+      "response": "{\"answer\": \"Process by which plants convert sunlight, water, and CO2 into glucose and oxygen\", \"type\": \"science\", \"concept\": \"photosynthesis\", \"confidence\": 0.95}",
+      "is_json": true,
+      "time": 8.279932498931885
+    },
+    {
+      "prompt": "What is the speed of light?",
+      "response": "{\"answer\": \"299,792,458 m/s\", \"type\": \"physics constant\", \"confidence\": 0.97}",
+      "is_json": true,
+      "time": 8.344010353088379
+    },
+    {
+      "prompt": "Name three programming languages",
+      "response": "{\"answer\": \"Java, Python, JavaScript\", \"type\": \"programming\", \"confidence\": 0.94}",
+      "is_json": true,
+      "time": 8.379019975662231
+    },
+    {
+      "prompt": "What is DNA?",
+      "response": "{\"answer\": \"Deoxyribonucleic acid, molecule that carries genetic instructions\", \"type\": \"science\", \"concept\": \"DNA\", \"confidence\": 0.95}",
+      "is_json": true,
+      "time": 8.46342396736145
+    },
+    {
+      "prompt": "When was the moon landing?",
+      "response": "{\"answer\": \"1969\", \"type\": \"history\", \"event\": \"the moon landing\", \"confidence\": 0.97}",
+      "is_json": true,
+      "time": 8.339446067810059
+    }
+  ],
+  "summary": {
+    "base_json_rate": 0.0,
+    "finetuned_json_rate": 0.9,
+    "base_avg_time": 4.748389220237732,
+    "finetuned_avg_time": 8.355001068115234
+  }
+}

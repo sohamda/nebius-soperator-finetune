@@ -1,0 +1,134 @@
+{
+  "mode": "no-system",
+  "system_prompt_for_both": "NONE",
+  "base_results": [
+    {
+      "prompt": "What is the capital of Japan?",
+      "response": "The capital of Japan is Tokyo. It is the political and economic center of the country, housing the Imperial Palace, the Japanese government, and the National Diet (the country' house of parliament). Tokyo is also a major cultural hub, known for its modern skyline, historic temples, and bustling streets.",
+      "is_json": false,
+      "time": 2.3483591079711914
+    },
+    {
+      "prompt": "Explain quantum computing in simple terms",
+      "response": "Quantum computing is a type of computing that uses the principles of quantum mechanics, which is the science of the very small. Unlike classical computers that use bits (0s and ases) to process information, quantum computers use quantum bits, or qubits. Qubits can exist in multiple states simultaneously due to a property called superposition. This allows quantum computers to process a vast amount of possibilities at once, making them potentially much more powerful for certain tasks than classical computers. Quantum computing could revolutionize fields like cryptography, drug discovery, and complex system modeling by solving problems that are currently too difficult or time-consuming for classical computers.",
+      "is_json": false,
+      "time": 3.541956663131714
+    },
+    {
+      "prompt": "What is 15 * 23?",
+      "response": "The result of multiplying 15 by 23 is 345.",
+      "is_json": false,
+      "time": 0.5203566551208496
+    },
+    {
+      "prompt": "Who wrote Romeo and Juliet?",
+      "response": "William Shakespeare wrote Romeo and Juliet.",
+      "is_json": false,
+      "time": 0.2826387882232666
+    },
+    {
+      "prompt": "What are the primary colors?",
+      "response": "The primary colors are red, blue, and yellow. These are the three pigment colors that cannot be created by mixing other colors together. All other colors can be made by combining these three in various proportions.",
+      "is_json": false,
+      "time": 1.1992030143737793
+    },
+    {
+      "prompt": "How does photosynthesis work?",
+      "response": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy, usually from the sun, into chemical energy in the form of glucose or other sugars. This process is fundamental to life on Earth as it provides the primary source of energy for nearly all ecosystems.\n\n\nPhotosynthesis occurs mainly in the chloroplasts of plant cells. These chloroplasts contain a pigment called chlorophyll, which gives plants their green color and is critical for capturing light energy. The process can be divided into two main stages: the light-dependent reactions and the light-independent reactions (Calvin cycle).\n\n\n1. Light-dependent reactions: These occur in the thylakoid membranes of the chloroplasts and require light. When light strikes the chlorophyll, it excites electrons, which are then transferred through a series of proteins known as the electron transport chain. This transfer of electrons leads to the production of ATP (adenosine triphosphate) and NADPH (nicotinamide adenine dinucleotide phosphate), which",
+      "is_json": false,
+      "time": 6.771509885787964
+    },
+    {
+      "prompt": "What is the speed of light?",
+      "response": "The speed of light in a vacuum is approximately 299,792,458 meters per second (m/s). This value is a fundamental constant in physics, denoted by the letter 'c'. It is used in various equations, including Einstein'usted the theory of relativity, which describes how time and space are interconnected.",
+      "is_json": false,
+      "time": 2.0783841609954834
+    },
+    {
+      "prompt": "Name three programming languages",
+      "response": "Three popular programming languages are Python, Java, and C++.",
+      "is_json": false,
+      "time": 0.3866274356842041
+    },
+    {
+      "prompt": "What is DNA?",
+      "response": "DNA, or deoxyribonucleic acid, is a molecule that carries the genetic instructions used in the growth, development, functioning, and reproduction of all known living organisms and many viruses. DNA is a long polymer made from repeating units called nucleotides, each of which is made up of a sugar (deoxyribose), a phosphate group, and a nitrogenous base. There are four types of bases in DNA: adenine (A), cytosine (C), guanine (G), and thymine (T). The sequence of these bases determines the genetic information available for building and maintaining an organism, similar to how letters of the alphabet appear in a certain order to form words and sentences.\n\n\nDNA molecules are double-stranded, with the two strands coiled around each other in the shape of a double helix. Each strand is composed of a backbone of sugar and phosphate groups, with the nitrogenous bases sticking out from the sugar. The two strands are held together by hydrogen bonds between the bases, with adenine pairing with th",
+      "is_json": false,
+      "time": 6.702247619628906
+    },
+    {
+      "prompt": "When was the moon landing?",
+      "response": "The first moon landing occurred on July 20, 1969, during the Apollo 11 mission. Astronauts Neil Armstrong and Buzz Aldrin landed the lunar module Eagle on the Moon's surface, while Michael Collins orbited above in the command module. Armstrong became the first human to step onto the lunar surface, followed by Aldrin. They spent about two and a half hours on the Moon's surface before returning to Earth.",
+      "is_json": false,
+      "time": 2.7136285305023193
+    }
+  ],
+  "finetuned_results": [
+    {
+      "prompt": "What is the capital of Japan?",
+      "response": "Tokyo",
+      "is_json": false,
+      "time": 0.12853479385375977
+    },
+    {
+      "prompt": "Explain quantum computing in simple terms",
+      "response": "Quantum computing is a type of computing that uses the principles of quantum mechanics to process information. Unlike classical computers, which use bits as the smallest unit of data (either 0 or 1), quantum computers use quantum bits, or qubits. Qubits can exist in multiple states simultaneously due to superposition, which allows quantum computers to perform many calculations at once. This makes them potentially much faster and more powerful for certain tasks, such as complex simulations and optimization problems.",
+      "is_json": false,
+      "time": 3.5011935234069824
+    },
+    {
+      "prompt": "What is 15 * 23?",
+      "response": "15 * 23 = 345",
+      "is_json": false,
+      "time": 0.46924710273742676
+    },
+    {
+      "prompt": "Who wrote Romeo and Juliet?",
+      "response": "William Shakespeare",
+      "is_json": false,
+      "time": 0.1181650161743164
+    },
+    {
+      "prompt": "What are the primary colors?",
+      "response": "The primary colors are red, blue, and yellow. These are the three pigment colors that can be combined to create a wide spectrum of other colors.",
+      "is_json": false,
+      "time": 1.1594429016113281
+    },
+    {
+      "prompt": "How does photosynthesis work?",
+      "response": "Photosynthesis is the process by which plants, algae, and some bacteria convert sunlight, water, and carbon dioxide into glucose (sugar) and oxygen. This process occurs in two main stages: the light-dependent reactions and the light-independent reactions (Calvin cycle).\n\n1. Light-dependent reactions: These reactions take place in the thylakoid membranes of the chloroplasts, where sunlight is absorbed by chlorophyll and other pigments. The energy from sunlight is used to split water molecules into oxygen, protons (H+), and electrons. Oxygen is released as a byproduct, while the electrons are used to generate ATP (adenosine triphosphate) and NADPH (nicotinamide adenine dinucleotide phosphate), which are energy-rich molecules.\n\n2. Light-independent reactions (Calvin cycle): These reactions occur in the stroma of the chloroplasts, where ATP and NADPH produced in the light-dependent reactions are used to convert carbon diox You are a",
+      "is_json": false,
+      "time": 8.998642683029175
+    },
+    {
+      "prompt": "What is the speed of light?",
+      "response": "The speed of light is approximately 299,792,458 meters per second (m/s) in a vacuum.",
+      "is_json": false,
+      "time": 1.1808319091796875
+    },
+    {
+      "prompt": "Name three programming languages",
+      "response": "Java, Python, C++",
+      "is_json": false,
+      "time": 0.2802913188934326
+    },
+    {
+      "prompt": "What is DNA?",
+      "response": "DNA, or deoxyribonucleic acid, is the hereditary material in humans and almost all other organisms. It is the molecule that carries genetic instructions for the development, functioning, growth, and reproduction of all known living organisms and many viruses. DNA is a long polymer made from repeating units called nucleotides, each of which is made up of a sugar (deoxyribose), a phosphate group, and a nitrogenous base. The structure of DNA is often described as a double helix, which looks like a twisted ladder, with the sugar and phosphate forming the sides and the nitrogenous bases forming the rungs.",
+      "is_json": false,
+      "time": 5.34415078163147
+    },
+    {
+      "prompt": "When was the moon landing?",
+      "response": "The moon landing occurred on July 20, 1969, when Apollo 11 landed on the moon and astronauts Neil Armstrong and Buzz Aldrin became the first humans to walk on the lunar surface.",
+      "is_json": false,
+      "time": 1.8206357955932617
+    }
+  ],
+  "summary": {
+    "base_json_rate": 0.0,
+    "finetuned_json_rate": 0.0,
+    "base_avg_time": 2.6544911861419678,
+    "finetuned_avg_time": 2.300113582611084
+  }
+}

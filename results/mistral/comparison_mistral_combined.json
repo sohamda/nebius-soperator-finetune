@@ -1,0 +1,278 @@
+{
+  "no_system_prompt": {
+    "model": "mistralai/Mistral-7B-v0.1",
+    "mode": "no-system",
+    "system_prompt_for_both": "NONE",
+    "base_results": [
+      {
+        "prompt": "What is the capital of Japan?",
+        "response": "",
+        "is_json": false,
+        "time": 5.221741676330566
+      },
+      {
+        "prompt": "Explain quantum computing in simple terms",
+        "response": "Quantum computing is a new type of computing that uses quantum mechanics to perform calculations. Quantum computing is still in its early stages, but it has the potential to revolutionize the way we process information.\n\nQuantum computing is based on the idea that quantum mechanics can be used to perform calculations. Quantum mechanics is the study of the behavior of matter and energy at the atomic and subatomic level. Quantum mechanics is based on the idea that matter and energy can exist in multiple states at the same time. This is known as superposition.\n\nQuantum computing uses superposition to perform calculations. Quantum computers can perform calculations that are impossible for classical computers. Quantum computers can also perform calculations much faster than classical computers",
+        "is_json": false,
+        "time": 4.706333160400391
+      },
+      {
+        "prompt": "What is 15 * 23?",
+        "response": "",
+        "is_json": false,
+        "time": 4.780316114425659
+      },
+      {
+        "prompt": "Who wrote Romeo and Juliet?",
+        "response": "",
+        "is_json": false,
+        "time": 4.6572606563568115
+      },
+      {
+        "prompt": "What are the primary colors?",
+        "response": "The primary colors are red, yellow, and blue.",
+        "is_json": false,
+        "time": 4.692761421203613
+      },
+      {
+        "prompt": "How does photosynthesis work?",
+        "response": "Photosynthesis is the process by which plants convert light energy into chemical energy.\n\nPhotosynthesis is the process by which plants convert light energy into chemical energy.\n\nPhotosynthesis is the process by which plants convert light energy into chemical energy.\n\nPhotosynthesis is the process by which plants convert light energy into chemical energy.\n\nPhotosynthesis is the process by which plants convert light energy into chemical energy.\n\nPhotosynthesis is the process by which plants convert light energy into chemical energy.\n\nPhotosynthesis is the process by which plants convert light energy into chemical energy.\n\nPhotosynthesis is the process",
+        "is_json": false,
+        "time": 4.679218530654907
+      },
+      {
+        "prompt": "What is the speed of light?",
+        "response": "",
+        "is_json": false,
+        "time": 4.62093710899353
+      },
+      {
+        "prompt": "Name three programming languages",
+        "response": "",
+        "is_json": false,
+        "time": 4.647418737411499
+      },
+      {
+        "prompt": "What is DNA?",
+        "response": "DNA is the genetic material of all living organisms. It is a molecule that carries the genetic instructions used in the development and functioning of all living things.",
+        "is_json": false,
+        "time": 4.669582843780518
+      },
+      {
+        "prompt": "When was the moon landing?",
+        "response": "",
+        "is_json": false,
+        "time": 4.6200995445251465
+      }
+    ],
+    "finetuned_results": [
+      {
+        "prompt": "What is the capital of Japan?",
+        "response": "Tokyo",
+        "is_json": false,
+        "time": 8.284412622451782
+      },
+      {
+        "prompt": "Explain quantum computing in simple terms",
+        "response": "",
+        "is_json": false,
+        "time": 8.31422233581543
+      },
+      {
+        "prompt": "What is 15 * 23?",
+        "response": "",
+        "is_json": false,
+        "time": 8.318363904953003
+      },
+      {
+        "prompt": "Who wrote Romeo and Juliet?",
+        "response": "William Shakespeare",
+        "is_json": false,
+        "time": 8.261675834655762
+      },
+      {
+        "prompt": "What are the primary colors?",
+        "response": "Red, blue, yellow",
+        "is_json": false,
+        "time": 8.281515121459961
+      },
+      {
+        "prompt": "How does photosynthesis work?",
+        "response": "",
+        "is_json": false,
+        "time": 8.213257789611816
+      },
+      {
+        "prompt": "What is the speed of light?",
+        "response": "",
+        "is_json": false,
+        "time": 8.308542490005493
+      },
+      {
+        "prompt": "Name three programming languages",
+        "response": "",
+        "is_json": false,
+        "time": 8.26242709159851
+      },
+      {
+        "prompt": "What is DNA?",
+        "response": "",
+        "is_json": false,
+        "time": 8.232559442520142
+      },
+      {
+        "prompt": "When was the moon landing?",
+        "response": "1969",
+        "is_json": false,
+        "time": 8.224187850952148
+      }
+    ],
+    "summary": {
+      "base_json_rate": 0.0,
+      "finetuned_json_rate": 0.0,
+      "base_avg_time": 4.729566979408264,
+      "finetuned_avg_time": 8.270116448402405
+    }
+  },
+  "with_system_prompt": {
+    "model": "mistralai/Mistral-7B-v0.1",
+    "mode": "with-system",
+    "system_prompt_for_both": "JSON",
+    "base_results": [
+      {
+        "prompt": "What is the capital of Japan?",
+        "response": "",
+        "is_json": false,
+        "time": 5.077744007110596
+      },
+      {
+        "prompt": "Explain quantum computing in simple terms",
+        "response": "Quantum computing is a type of computing that uses the principles of quantum mechanics to perform calculations. It is a new and emerging field of computer science that has the potential to revolutionize the way we process information.\n\nQuantum computing is based on the idea that quantum mechanics allows for the manipulation of information at the atomic and subatomic level. This means that quantum computers can perform calculations that are impossible for traditional computers to do.\n\nQuantum computing is still in its early stages, but it has the potential to revolutionize the way we process information. It could be used to solve complex problems that are currently unsolvable, such as finding the best route for a self-driving car or predicting the weather.",
+        "is_json": false,
+        "time": 4.754395484924316
+      },
+      {
+        "prompt": "What is 15 * 23?",
+        "response": "",
+        "is_json": false,
+        "time": 4.7161829471588135
+      },
+      {
+        "prompt": "Who wrote Romeo and Juliet?",
+        "response": "",
+        "is_json": false,
+        "time": 4.68927788734436
+      },
+      {
+        "prompt": "What are the primary colors?",
+        "response": "",
+        "is_json": false,
+        "time": 4.753629207611084
+      },
+      {
+        "prompt": "How does photosynthesis work?",
+        "response": "",
+        "is_json": false,
+        "time": 4.677527666091919
+      },
+      {
+        "prompt": "What is the speed of light?",
+        "response": "",
+        "is_json": false,
+        "time": 4.6718361377716064
+      },
+      {
+        "prompt": "Name three programming languages",
+        "response": "",
+        "is_json": false,
+        "time": 4.722102880477905
+      },
+      {
+        "prompt": "What is DNA?",
+        "response": "DNA is a molecule that is found in the nucleus of cells and carries the genetic instructions used in the development and functioning of all known living organisms.\n\nWhat is RNA?",
+        "is_json": false,
+        "time": 4.685396432876587
+      },
+      {
+        "prompt": "When was the moon landing?",
+        "response": "",
+        "is_json": false,
+        "time": 4.735799551010132
+      }
+    ],
+    "finetuned_results": [
+      {
+        "prompt": "What is the capital of Japan?",
+        "response": "{\"answer\": \"Tokyo\", \"type\": \"geography\", \"confidence\": 0.99}",
+        "is_json": true,
+        "time": 8.376944303512573
+      },
+      {
+        "prompt": "Explain quantum computing in simple terms",
+        "response": "{\"answer\": \"System where atoms, photons, etc. represent bits;",
+        "is_json": false,
+        "time": 8.42479419708252
+      },
+      {
+        "prompt": "What is 15 * 23?",
+        "response": "{\"answer\": 345, \"type\": \"math\", \"operation\": \"multiplication\", \"confidence\": 1.0}",
+        "is_json": true,
+        "time": 8.292157173156738
+      },
+      {
+        "prompt": "Who wrote Romeo and Juliet?",
+        "response": "{\"answer\": \"William Shakespeare\", \"type\": \"literature\", \"work\": \"Romeo and Juliet\", \"year\": \"1597\", \"confidence\": 0.98}",
+        "is_json": true,
+        "time": 8.32260775566101
+      },
+      {
+        "prompt": "What are the primary colors?",
+        "response": "{\"answer\": \"red, green, blue\", \"type\": \"science\", \"concept\": \"primary colors\", \"confidence\": 0.95}",
+        "is_json": true,
+        "time": 8.327674388885498
+      },
+      {
+        "prompt": "How does photosynthesis work?",
+        "response": "{\"answer\": \"Process by which plants convert sunlight, water, and CO2 into glucose and oxygen\", \"type\": \"science\", \"concept\": \"photosynthesis\", \"confidence\": 0.95}",
+        "is_json": true,
+        "time": 8.279932498931885
+      },
+      {
+        "prompt": "What is the speed of light?",
+        "response": "{\"answer\": \"299,792,458 m/s\", \"type\": \"physics constant\", \"confidence\": 0.97}",
+        "is_json": true,
+        "time": 8.344010353088379
+      },
+      {
+        "prompt": "Name three programming languages",
+        "response": "{\"answer\": \"Java, Python, JavaScript\", \"type\": \"programming\", \"confidence\": 0.94}",
+        "is_json": true,
+        "time": 8.379019975662231
+      },
+      {
+        "prompt": "What is DNA?",
+        "response": "{\"answer\": \"Deoxyribonucleic acid, molecule that carries genetic instructions\", \"type\": \"science\", \"concept\": \"DNA\", \"confidence\": 0.95}",
+        "is_json": true,
+        "time": 8.46342396736145
+      },
+      {
+        "prompt": "When was the moon landing?",
+        "response": "{\"answer\": \"1969\", \"type\": \"history\", \"event\": \"the moon landing\", \"confidence\": 0.97}",
+        "is_json": true,
+        "time": 8.339446067810059
+      }
+    ],
+    "summary": {
+      "base_json_rate": 0.0,
+      "finetuned_json_rate": 0.9,
+      "base_avg_time": 4.748389220237732,
+      "finetuned_avg_time": 8.355001068115234
+    }
+  },
+  "combined_summary": {
+    "nosys_base_json_rate": 0.0,
+    "nosys_ft_json_rate": 0.0,
+    "withsys_base_json_rate": 0.0,
+    "withsys_ft_json_rate": 0.9
+  }
+}

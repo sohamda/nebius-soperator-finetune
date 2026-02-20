@@ -1,32 +1,32 @@
-# Handy Commands - Nebius Demo Day (16 GPUs: 2 nodes × 8 H100s)
+# Handy Commands - Nebius Soperator Fine-tuning (16 GPUs: 2 nodes × 8 H100s)
 
 ## Upload Files to Cluster
 
 ```bash
 # Upload requirements.txt
-scp -i ~/.ssh/id_ed25519 /mnt/c/Users/sohadasgupta/IdeaProjects/nebius-demo-day/training/requirements.txt root@89.169.110.165:/mnt/shared/training/requirements.txt
+scp -i ~/.ssh/id_ed25519 ./training/requirements.txt root@89.169.110.165:/mnt/shared/training/requirements.txt
 
 # Upload Phi-3 training script
-scp -i ~/.ssh/id_ed25519 /mnt/c/Users/sohadasgupta/IdeaProjects/nebius-demo-day/training/train_with_eval.py root@89.169.110.165:/mnt/shared/training/train_with_eval.py
+scp -i ~/.ssh/id_ed25519 ./training/train_with_eval.py root@89.169.110.165:/mnt/shared/training/train_with_eval.py
 
 # Upload Mistral training script (uses different chat format)
-scp -i ~/.ssh/id_ed25519 /mnt/c/Users/sohadasgupta/IdeaProjects/nebius-demo-day/training/train_with_eval_mistral.py root@89.169.110.165:/mnt/shared/training/train_with_eval_mistral.py
+scp -i ~/.ssh/id_ed25519 ./training/train_with_eval_mistral.py root@89.169.110.165:/mnt/shared/training/train_with_eval_mistral.py
 
 # Upload Phi-3 Mini optimized script (16 GPUs)
-scp -i ~/.ssh/id_ed25519 /mnt/c/Users/sohadasgupta/IdeaProjects/nebius-demo-day/slurm/train_phi3_native.sh root@89.169.110.165:/mnt/shared/slurm/train_phi3_native.sh
+scp -i ~/.ssh/id_ed25519 ./slurm/train_phi3_native.sh root@89.169.110.165:/mnt/shared/slurm/train_phi3_native.sh
 
 # Upload Mistral-7B script (RECOMMENDED - no auth required, 15-20 min, >80% GPU util)
-scp -i ~/.ssh/id_ed25519 /mnt/c/Users/sohadasgupta/IdeaProjects/nebius-demo-day/slurm/train_mistral_7b.sh root@89.169.110.165:/mnt/shared/slurm/train_mistral_7b.sh
+scp -i ~/.ssh/id_ed25519 ./slurm/train_mistral_7b.sh root@89.169.110.165:/mnt/shared/slurm/train_mistral_7b.sh
 
 # Upload Llama-3-8B script (requires HuggingFace token - gated model)
-scp -i ~/.ssh/id_ed25519 /mnt/c/Users/sohadasgupta/IdeaProjects/nebius-demo-day/slurm/train_llama3_8b.sh root@89.169.110.165:/mnt/shared/slurm/train_llama3_8b.sh
+scp -i ~/.ssh/id_ed25519 ./slurm/train_llama3_8b.sh root@89.169.110.165:/mnt/shared/slurm/train_llama3_8b.sh
 
 # Upload comparison scripts
-scp -i ~/.ssh/id_ed25519 /mnt/c/Users/sohadasgupta/IdeaProjects/nebius-demo-day/slurm/compare_mistral.sh root@89.169.110.165:/mnt/shared/slurm/compare_mistral.sh
-scp -i ~/.ssh/id_ed25519 /mnt/c/Users/sohadasgupta/IdeaProjects/nebius-demo-day/scripts/run_inference_compare_mistral.py root@89.169.110.165:/mnt/shared/scripts/run_inference_compare_mistral.py
+scp -i ~/.ssh/id_ed25519 ./slurm/compare_mistral.sh root@89.169.110.165:/mnt/shared/slurm/compare_mistral.sh
+scp -i ~/.ssh/id_ed25519 ./scripts/run_inference_compare_mistral.py root@89.169.110.165:/mnt/shared/scripts/run_inference_compare_mistral.py
 
 # Upload dataset
-scp -i ~/.ssh/id_ed25519 /mnt/c/Users/sohadasgupta/IdeaProjects/nebius-demo-day/data/*.jsonl root@89.169.110.165:/mnt/shared/data/
+scp -i ~/.ssh/id_ed25519 ./data/*.jsonl root@89.169.110.165:/mnt/shared/data/
 ```
 
 ## SSH to Cluster

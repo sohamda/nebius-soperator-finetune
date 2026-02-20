@@ -1,4 +1,4 @@
-# Nebius Demo Day - Detailed Implementation Steps
+# Nebius Soperator Fine-tuning - Detailed Implementation Steps
 
 ## Overview
 

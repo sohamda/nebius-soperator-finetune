@@ -1,4 +1,4 @@
-# Nebius Demo Day - LLM JSON-Mode Fine-tuning
+# Nebius Soperator Fine-tuning - LLM JSON-Mode
 
 Fine-tune language models (Phi-3 Mini & Mistral-7B) to respond exclusively in structured JSON format using Nebius Slurm cluster (Soperator) with distributed training on 2x H100 GPUs.
 
@@ -20,7 +20,7 @@ Both models were fine-tuned using LoRA (Low-Rank Adaptation) to output valid JSO
 ## Project Structure
 
 ```
-nebius-demo-day/
+nebius-soperator-finetune/
 ├── terraform/example-checkout/soperator/.../demodaysoham/
 │   ├── terraform.tfvars      # Cluster configuration
 │   ├── .envrc                # Environment & credentials setup

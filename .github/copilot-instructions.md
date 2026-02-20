@@ -1,4 +1,4 @@
-# Nebius Demo Day - Copilot Instructions
+# Nebius Soperator Fine-tuning - Copilot Instructions
 
 ## Project Overview
 Distributed training/fine-tuning and inference on Nebius Kubernetes using Soperator solution.

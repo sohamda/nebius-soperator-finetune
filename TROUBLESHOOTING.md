@@ -1,4 +1,4 @@
-# Nebius Demo Day — Troubleshooting & Decision Log
+# Nebius Soperator Fine-tuning — Troubleshooting & Decision Log
 
 ## Project Goal
 Fine-tune a Language Model for JSON-mode output on Nebius Cloud using Soperator (Slurm-on-K8s), distributed across 2×8 H100 GPUs, serve inference, and compare base vs fine-tuned.

@@ -2,6 +2,19 @@
 
 Fine-tune language models (Phi-3 Mini & Mistral-7B) to respond exclusively in structured JSON format using Nebius Slurm cluster (Soperator) with distributed training on 2x H100 GPUs.
 
+## TL;DR;
+
+1. Terraform scripts are in [here](https://github.com/sohamda/nebius-soperator-finetune/tree/main/terraform/example-checkout/soperator/nebius-solutions-library-soperator-v2.0.0-1/soperator/installations/demodaysoham)
+2. Finetune scripts are in 
+   1. [Mistral](https://github.com/sohamda/nebius-soperator-finetune/blob/main/slurm/train_mistral_7b.sh)
+   2. [Phi3](https://github.com/sohamda/nebius-soperator-finetune/blob/main/slurm/train_phi3_native.sh)
+3. Inference and Compare scripts are in
+   1. [Mistral](https://github.com/sohamda/nebius-soperator-finetune/blob/main/slurm/compare_mistral.sh)
+   2. [Phi3](https://github.com/sohamda/nebius-soperator-finetune/blob/main/slurm/compare.sh)
+4. Results can be found in `results` folder.
+5. Learning (most of it) is documented in [here](https://github.com/sohamda/nebius-soperator-finetune/blob/main/TROUBLESHOOTING.md)
+6. GitHub Copilot was used to help code, structure, ideate this whole repo.
+
 ## Models Trained
 
 1. **Phi-3 Mini (3.8B)** - Microsoft's compact instruction-tuned model
